@@ -1,0 +1,10 @@
+base: fedora-rawhide-x86_64
+localrepo: /home/gmessmer/git/bazel/bazel-result
+
+build:
+  - type: dist-git
+    url: /home/gmessmer/git/bazel
+    packages:
+      - bazel-rpm-macros:main
+      - bazel9:main
+      - bazel-hello-demo:main
